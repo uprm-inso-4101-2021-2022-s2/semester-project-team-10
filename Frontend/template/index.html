@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Just One Itinerary</title>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename= 'index.css') }}">   
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="{{ url_for('static', filename= 'Just One Itinerary-logos_transparent.png') }}">
+            </div>
+
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#requests">Requests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="rightNav"> -->
+            <!-- <input type="text" name="search" id="search"> -->
+            <button class="btn btn-sm">Login/Register</button>
+        </div>
+    </nav>
+
+    <section class="work_calendar">
+       <div class="container">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">
+              <h1></h1>
+              <p></p>
+            </div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+        </div>
+      </div>  
+      <script src="{{ url_for('static', filename= 'calendar_script.js') }}"></script> 
+    </section>
+    
+ 
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                    Rigoberto Idalgo
+                </h1>
+                     
+                <p class="text-small"> Task: Store Opening </p>
+                <p class="text-small"> Date: March 26, 2022 </p>
+                <p class="text-small"> Time: 7:00am - 1:00pm </p>
+                   
+            </div>
+        </div>
+    </section>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="secondHalf">
+                <h1 class="text-big" id="program">
+                    Bob Ross
+                </h1>
+
+                <p class="text-small"> Task: Store Closing </p>
+                <p class="text-small"> Date: March 27, 2022 </p>
+                <p class="text-small"> Time: 5:00pm - 11:00pm </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="thirdsection">
+        <div class="box-main">
+            <div class="thirdHalf">
+                <h1 class="text-big" id="program">
+                    Joe Smith
+                </h1>
+
+                <p class="text-small"> Task: Cashier </p>
+                <p class="text-small"> Date: March 29, 2022 </p>
+                <p class="text-small"> Time: 9:00am - 5:00pm </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fourthsection">
+        <div class="box-main">
+            <div class="fourthHalf">
+                <h1 class="text-big" id="program">
+                    Jomar Rose
+                </h1>
+
+                <p class="text-small"> Task: Supervisor </p>
+                <p class="text-small"> Date: March 29, 2022 </p>
+                <p class="text-small"> Time: 9:00am - 5:00pm </p> 
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fifthsection">
+        <div class="box-main">
+            <div class="fifthHalf">
+                <h1 class="text-big" id="program">
+                    Richard Eisen
+                </h1>
+
+                <p class="text-small"> Task: Maintenance </p>
+                <p class="text-small"> Date: April 1, 2022 </p>
+                <p class="text-small"> Time: 7:00am - 1:00pm </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sixthsection">
+        <div class="box-main">
+            <div class="sixthHalf">
+                <h1 class="text-big" id="program">
+                    Juan Rosado
+                </h1>
+
+                <p class="text-small"> Task: Store Opening </p>
+                <p class="text-small"> Date: April 2, 2022 </p>
+                <p class="text-small"> Time: 7:00am - 1:00pm </p> 
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="background"> 
+        <p class="text-footer">
+            Copyright © All rights are reserved.
+        </p>
+ 
+    </footer>   
+
+</body>
+
+</html>
